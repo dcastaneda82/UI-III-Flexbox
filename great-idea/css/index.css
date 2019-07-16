@@ -48,9 +48,12 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
-}
+html {
+	box-sizing: border-box;
+  }
+  *, *:before, *:after {
+	box-sizing: inherit;
+  }
 
 html, body {
     height: 100%;
@@ -63,4 +66,130 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+body {
+	margin: 30px 150px 10px 150px;
+}
+
+/* Top Content */
+
+header.topContent {
+	display: flex;
+	justify-content: space-between;
+	width: -webkit-fill-available;
+}
+
+header.topContent nav a {
+	margin: 0px 80px 0px 0px;
+    text-decoration: none;
+    justify-content: space-between;
+    color: rgb(194, 194, 194);
+}
+
+header.topContent nav a:hover {
+	background: rgb(255, 255, 255);
+	border-radius: 10px;
+	color: black;
+	padding: 5px;
+	box-shadow: 7px 5px 5px rgb(230, 230, 230);
+}
+
+header.topContent img.logo {
+	margin-top: -12px;
+}
+
+/*Mid content*/
+
+.welcome {
+	display: flex;
+	justify-content: space-between;
+	width: -webkit-fill-available;
+}
+
+.welcome-text h1 {
+	font-size: 100px;
+    text-align: center;
+    margin: 140px 35px 15px 80px;
+}
+
+.welcome-text button {
+	margin-left: 200px;
+	margin-top: 15px;
+    background: white;
+	border: 1px solid;
+	padding: 5px 50px 5px 50px;
+	font-size: 15px;
+	border-radius: 3px;
+}
+
+.welcome-text button:hover{
+	background: black;
+	border-radius: 3px;
+	color: white;
+	padding: 5px 50px 5px 50px;
+}
+
+.welcome img.techArt {
+	height: 460px;
+	margin: 45px 80px 60px;
+	width: -webkit-fill-available;
+}
+
+/*Main Content*/
+
+.main-content .top-text h4 {
+	font-size: 20px;
+    margin: 2px 0px 2px 0px;
+}
+
+.main-content .top-text p{
+	font-size: 17px;
+}
+
+.main-content .top-text {
+	display: flex;
+	text-align: left;
+	margin: 10px 0px 10px 0px;
+	width: -webkit-fill-available;
+}
+
+.main-content img.middle-img {
+	width: -webkit-fill-available
+}
+
+.main-content .bottom-text h4 {
+	font-size: 20px;
+    margin: 2px 0px 2px 0px;
+}
+
+.main-content .bottom-text p {
+	font-size: 17px;
+}
+
+.main-content .bottom-text {
+	display: flex;
+	text-align: left;
+	margin: 10px 0px 10px 0px;
+	width: -webkit-fill-available;
+}
+
+.bottom-content .c {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.bottom-content .contact-info h4 {
+	margin: 5px 5px 5px 0px;
+}
+
+.bottom-content .contact-info address {
+	margin: 5px 5px 5px 0px;
+}
+
+
+
+hr {
+	width: auto;
+}

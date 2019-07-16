@@ -1,0 +1,198 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+/*ol, ul {
+	list-style: none;
+}*/
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* My code */
+
+body {
+    margin: 15px 100px 15px;
+    position: relative;
+}
+
+.top-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 1px 10px 1px;
+}
+
+.top-content nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.nav-bar a {
+    margin: 0px 80px 0px 0px;
+    text-decoration: none;
+    justify-content: space-between;
+    color: rgb(194, 194, 194);
+}
+
+.nav-bar a:hover {
+	background: rgb(255, 255, 255);
+	border-radius: 10px;
+	color: black;
+	padding: 5px;
+	box-shadow: 7px 5px 5px rgb(230, 230, 230);
+}
+
+section.services {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+section.services img {
+    width: -webkit-fill-available;
+}
+
+section.services div {
+    display: inline-block;
+    width: -webkit-fill-available;
+    font-size: 150%;
+    margin: 30px 0px 30px 0px;
+}
+
+.text-content {
+    display: flex;
+    padding: 45px 0px 45px 0px;
+}
+
+.text-content div {
+    border: 1px solid rgb(0, 0, 0);
+    margin: 0px 40px 0px 1px;
+    padding: 25px;
+    font-size: 150%;
+    border-radius: 1%;
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    flex-flow: row wrap; 
+}
+
+.text-content button {
+    padding: 0px 0px 0px 30px;
+    width: 170px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 30px;
+    color: white;
+    background-color: rgb(206, 206, 206);
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.text-content button:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 30px;
+
+}
+
+.text-content p {
+    padding: 0px 0px 30px 0px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.bottom-content {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0px 0px 30px 0px;
+}
+
+.fact-text {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 25px 0px 0px 0px;
+    width: 48%;
+    font-size: 25px;
+}
+
+
+.cool-list ul {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0px 25px 0px 0px;
+    font-size: 200%;
+    padding: 1rem;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+  
+.bottom-img img {
+    
+    display: flex;
+    align-self: center;
+    flex-flow: row-reverse wrap;
+    flex-grow: 1;
+    width: 152%;
+    /*margin: 25px 0px 0px 25px;*/
+}
+
+hr {
+    margin: 30px 0px 30px 0px;
+    border: 1px solid black;
+}
