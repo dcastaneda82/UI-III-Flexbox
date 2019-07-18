@@ -68,21 +68,13 @@ body {
     position: relative;
 }
 
+
+/*Nav bar & image*/
 .top-content {
     display: flex;
     justify-content: space-between;
-    padding: 1px 1px 10px 1px;
-}
-
-.top-content nav {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.nav-bar {
-    display: flex;
-    align-items: center;
     flex-flow: row wrap;
+    padding: 1px 1px 10px 1px;
 }
 
 .nav-bar a {
@@ -100,25 +92,28 @@ body {
 	box-shadow: 7px 5px 5px rgb(230, 230, 230);
 }
 
-section.services {
+/*Service text & image*/
+.services {
     display: flex;
     flex-flow: column nowrap;
 }
 
-section.services img {
+.services img {
     width: -webkit-fill-available;
+    border-radius: 15px;
 }
 
-section.services div {
-    display: inline-block;
+.services div {
     width: -webkit-fill-available;
     font-size: 150%;
     margin: 30px 0px 30px 0px;
 }
 
+/*Main text*/
 .text-content {
     display: flex;
-    padding: 45px 0px 45px 0px;
+    flex-flow: row nowrap;
+    padding: 0px 0px 35px 0px;
 }
 
 .text-content div {
@@ -128,20 +123,15 @@ section.services div {
     font-size: 150%;
     border-radius: 1%;
     background-color: rgb(233, 233, 233);
-    display: flex;
-    flex-flow: row wrap; 
 }
 
 .text-content button {
-    padding: 0px 0px 0px 30px;
     width: 170px;
     height: 50px;
     font-size: 20px;
     border-radius: 30px;
     color: white;
     background-color: rgb(206, 206, 206);
-    display: flex;
-    flex-flow: row wrap;
 }
 
 .text-content button:hover {
@@ -153,43 +143,51 @@ section.services div {
 
 .text-content p {
     padding: 0px 0px 30px 0px;
-    display: flex;
-    flex-flow: row wrap;
 }
 
 .bottom-content {
     display: flex;
     flex-flow: row wrap;
-    margin: 0px 0px 30px 0px;
+    margin: 65px 0px 30px 0px;
 }
 
 .fact-text {
     display: flex;
     flex-flow: column wrap;
-    margin: 25px 0px 0px 0px;
+    padding: 0px 45px 0px 0px;
     width: 48%;
     font-size: 25px;
 }
-
 
 .cool-list ul {
     display: flex;
     flex-flow: column wrap;
     margin: 0px 25px 0px 0px;
-    font-size: 200%;
     padding: 1rem;
     list-style-type: circle;
     list-style-position: inside;
 }
   
-.bottom-img img {
+.bottom-img {
     
     display: flex;
     align-self: center;
     flex-flow: row-reverse wrap;
     flex-grow: 1;
+}
+ 
+.bottom-img img {
     width: 152%;
     /*margin: 25px 0px 0px 25px;*/
+    border-radius: 15px;
+}
+
+/*Well... footer*/
+.c {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    padding: 15px;
 }
 
 hr {
