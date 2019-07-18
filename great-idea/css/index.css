@@ -69,25 +69,27 @@ h1, h2, h3, h4, h5 {
 
 
 body {
-	margin: 30px 150px 10px 150px;
+	margin: 15px 100px 15px;
+    position: relative;
 }
 
 /* Top Content */
 
-header.topContent {
+.topContent {
 	display: flex;
 	justify-content: space-between;
-	width: -webkit-fill-available;
+    flex-flow: row wrap;
+    padding: 1px 1px 10px 1px;
 }
 
-header.topContent nav a {
+.nav-bar a {
 	margin: 0px 80px 0px 0px;
     text-decoration: none;
     justify-content: space-between;
     color: rgb(194, 194, 194);
 }
 
-header.topContent nav a:hover {
+.nav-bar a:hover {
 	background: rgb(255, 255, 255);
 	border-radius: 10px;
 	color: black;
@@ -95,101 +97,106 @@ header.topContent nav a:hover {
 	box-shadow: 7px 5px 5px rgb(230, 230, 230);
 }
 
-header.topContent img.logo {
-	margin-top: -12px;
-}
-
 /*Mid content*/
 
 .welcome {
 	display: flex;
 	justify-content: space-between;
-	width: -webkit-fill-available;
 }
 
-.welcome-text h1 {
+.welcome-text {
 	font-size: 100px;
     text-align: center;
-    margin: 140px 35px 15px 80px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome h1 {
+	padding: 15px 0px 0px 0px;
 }
 
 .welcome-text button {
-	margin-left: 200px;
-	margin-top: 15px;
-    background: white;
-	border: 1px solid;
-	padding: 5px 50px 5px 50px;
-	font-size: 15px;
-	border-radius: 3px;
+	font-size: 25px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px 45px 5px 45px;
 }
 
 .welcome-text button:hover{
-	background: black;
-	border-radius: 3px;
+	font-size: 25px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+	padding: 5px 45px 5px 45px;
 	color: white;
-	padding: 5px 50px 5px 50px;
 }
 
-.welcome img.techArt {
-	height: 460px;
-	margin: 45px 80px 60px;
-	width: -webkit-fill-available;
+.techArt {
+	padding: 20px;
 }
 
 /*Main Content*/
 
-.main-content .top-text h4 {
-	font-size: 20px;
-    margin: 2px 0px 2px 0px;
-}
-
-.main-content .top-text p{
-	font-size: 17px;
-}
-
-.main-content .top-text {
+.main-content {
 	display: flex;
-	text-align: left;
-	margin: 10px 0px 10px 0px;
-	width: -webkit-fill-available;
+	flex-direction: column;
 }
 
-.main-content img.middle-img {
-	width: -webkit-fill-available
-}
-
-.main-content .bottom-text h4 {
-	font-size: 20px;
-    margin: 2px 0px 2px 0px;
-}
-
-.main-content .bottom-text p {
-	font-size: 17px;
-}
-
-.main-content .bottom-text {
+.top-text {
 	display: flex;
-	text-align: left;
-	margin: 10px 0px 10px 0px;
-	width: -webkit-fill-available;
+	font-size: 130%;
+	margin: 0px 0px 15px 0px;
 }
 
-.bottom-content .c {
+.top-text div {
+	padding: 0px 20px 15px 0px;
+}
+
+.middle-img {
+	display: flex;
+	align-self: center;
+	width: -webkit-fill-available;
+	border-radius: 15px
+}
+
+.bottom-text {
+	display: flex;
+	font-size: 130%;
+	margin: 15px 0px 5px 0px;
+    padding: 15px 0px 5px 0px;
+}
+
+.bottom-text div {
+	margin: 0px 20px 0px 0px;
+}
+
+/* Bottom Content*/
+
+.bottom-content {
     display: flex;
-    flex-direction: row-reverse;
+	flex-direction: column;
     justify-content: center;
 }
 
-.bottom-content .contact-info h4 {
+.contact-info h4 {
 	margin: 5px 5px 5px 0px;
+	padding: 5px 5px 5px 0px;
 }
 
-.bottom-content .contact-info address {
+.contact-info address {
 	margin: 5px 5px 5px 0px;
+	padding: 5px 5px 5px 0px;
 }
 
-
+.c {
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+    padding: 20px;
+}
 
 hr {
-	width: auto;
+	margin: 15px 0px 15px 0px;
+    border: 1px solid black;
 }
